@@ -65,5 +65,19 @@ vc.neo_query_wrapper.vfb_id_2_xrefs((['VFB_jrchk0es']))
 
 ```{python}
 vc.neo_query_wrapper.get_TermInfo(['SIP088'])
+vc.neo_query_wrapper.get_TermInfo(['SIP001'])
+```
+## 
+Mapping keys to vfb ids
+
+```{python}
+vc.neo_query_wrapper.xref_2_vfb_id(['10001'],)
+vc.neo_query_wrapper.get_dbs()
+```
+
+So we maybe need to know the dbs?
+
+```{r}
+
 ```
 

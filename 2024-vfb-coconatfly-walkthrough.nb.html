@@ -1875,8 +1875,9 @@ type            flywire hemibrain
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgcHl0aG9uXG52Yy5uZW9fcXVlcnlfd3JhcHBlci5nZXRfVGVybUluZm8oWydTSVAwODgnXSlcblxuXG5gYGAifQ== -->
-<pre class="python"><code>vc.neo_query_wrapper.get_TermInfo([&#39;SIP088&#39;])
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgcHl0aG9uXG5yZXRpY3VsYXRlOjpyZXBsX3B5dGhvbigpXG52Yy5uZW9fcXVlcnlfd3JhcHBlci5nZXRfVGVybUluZm8oWydTSVAwMDEnXSlcblxuYGBgIn0= -->
+<pre class="python"><code>reticulate::repl_python()
+vc.neo_query_wrapper.get_TermInfo([&#39;SIP001&#39;])
 </code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-output-begin eyJkYXRhIjoiL1VzZXJzL2plZmZlcmlzL0xpYnJhcnkvci1taW5pY29uZGEtYXJtNjQvZW52cy9yLXJldGljdWxhdGUvbGliL3B5dGhvbjMuMTAvc2l0ZS1wYWNrYWdlcy92ZmJfY29ubmVjdC9uZW8vcXVlcnlfd3JhcHBlci5weToxOTI6IFVzZXJXYXJuaW5nOiBObyByZXN1bHRzIHJldHVybmVkXG4gIHdhcm5pbmdzLndhcm4oJ05vIHJlc3VsdHMgcmV0dXJuZWQnKVxuIn0= -->
@@ -1888,9 +1889,29 @@ type            flywire hemibrain
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
+<div id="section" class="section level2">
+<h2></h2>
+<p>Mapping keys to vfb ids</p>
 <!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgcHl0aG9uXG52Yy5uZW9fcXVlcnlfd3JhcHBlci5nZXRfZGJzKClcblxuXG5gYGAifQ== -->
+<pre class="python"><code>vc.neo_query_wrapper.get_dbs()
+</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWyd2bmMxX2NhdG1haWRfYXBpJywgJ3ZuY19oYXJ2YXJkX2NhdG1haWRfYXBpJywgJ2ZseXdpcmVfc3VwZXJ2b3hlbCcsICdsMWVtX2NhdG1haWRfYXBpJywgJ2ZhZmJfY2F0bWFpZF9hcGknLCAnanJjX3NsaWRlX2NvZGVfYXBpJywgJ0luc2VjdEJyYWluREInLCAnRmx5QnJhaW5fTkRCJywgJ2NhdG1haWRfZmFmYicsICdjYXRtYWlkX2ZhbmMnLCAnc2NFeHByZXNzaW9uQXRsYXMnLCAnS29uc3RhbnRpbmlkZXNfZXRfYWxfMjAxOF9PcHRpY0xvYmUnLCAnRmx5Q2lyY3VpdCcsICdRdWlja0dPJywgJ2NhdG1haWRfbDFlbScsICdGbHlMaWdodFNwbGl0JywgJ0ZseUxpZ2h0UmF3JywgJ0FtaUdPJywgJ2ZseXdpcmU3ODMnLCAnZmx5d2lyZTYzMCcsICdWRFJDJywgJ0ZseUJhc2UnLCAnY2F0bWFpZF9sZWc0MCcsICdsYXJ2YWxicmFpbl9uZXVyb3BpbCcsICdCcmFpblRyYXAnLCAnY2F0bWFpZF9mYW5jX0pSQzIwMThWRicsICduZXVwcmludF9KUkNfTWFuYycsICdGbHlCYXNlX3ZvY2FidWxhcmllcycsICdGbHlMaWdodFNwbGl0U2xpZGVDb2RlJywgJ0ZseUxpZ2h0R2VuMU1DRk8nLCAnRmx5Q2lyY3VpdDF2MicsICdGbHlMaWdodFJhd1NsaWRlQ29kZScsICduZXVyb25icmlkZ2UnLCAnRmx5UE5TJywgJ0V4cHJlc3Npb25BdGxhcycsICdsYXJ2YWxicmFpbl9heG9uX3RyYWN0JywgJ0ZseUxpZ2h0R2VuMU1DRk9TbGlkZUNvZGUnLCAnRmx5TGlnaHQnLCAnRG9PUicsICduZXVwcmludF9KUkNfSGVtaWJyYWluXzFwb2ludDBwb2ludDEnLCAnR0VPJywgJ2xtYl9jbHVzdGVyX3BhZ2VzX3YzJywgJ2xtYl9jbHVzdGVyX3BhZ2VzX3YyJywgJ25ldXByaW50X0pSQ19IZW1pYnJhaW5fMXBvaW50MSddXG4ifQ== -->
+<pre><code>[&#39;vnc1_catmaid_api&#39;, &#39;vnc_harvard_catmaid_api&#39;, &#39;flywire_supervoxel&#39;, &#39;l1em_catmaid_api&#39;, &#39;fafb_catmaid_api&#39;, &#39;jrc_slide_code_api&#39;, &#39;InsectBrainDB&#39;, &#39;FlyBrain_NDB&#39;, &#39;catmaid_fafb&#39;, &#39;catmaid_fanc&#39;, &#39;scExpressionAtlas&#39;, &#39;Konstantinides_et_al_2018_OpticLobe&#39;, &#39;FlyCircuit&#39;, &#39;QuickGO&#39;, &#39;catmaid_l1em&#39;, &#39;FlyLightSplit&#39;, &#39;FlyLightRaw&#39;, &#39;AmiGO&#39;, &#39;flywire783&#39;, &#39;flywire630&#39;, &#39;VDRC&#39;, &#39;FlyBase&#39;, &#39;catmaid_leg40&#39;, &#39;larvalbrain_neuropil&#39;, &#39;BrainTrap&#39;, &#39;catmaid_fanc_JRC2018VF&#39;, &#39;neuprint_JRC_Manc&#39;, &#39;FlyBase_vocabularies&#39;, &#39;FlyLightSplitSlideCode&#39;, &#39;FlyLightGen1MCFO&#39;, &#39;FlyCircuit1v2&#39;, &#39;FlyLightRawSlideCode&#39;, &#39;neuronbridge&#39;, &#39;FlyPNS&#39;, &#39;ExpressionAtlas&#39;, &#39;larvalbrain_axon_tract&#39;, &#39;FlyLightGen1MCFOSlideCode&#39;, &#39;FlyLight&#39;, &#39;DoOR&#39;, &#39;neuprint_JRC_Hemibrain_1point0point1&#39;, &#39;GEO&#39;, &#39;lmb_cluster_pages_v3&#39;, &#39;lmb_cluster_pages_v2&#39;, &#39;neuprint_JRC_Hemibrain_1point1&#39;]</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>So we maybe need to know the dbs?</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+</div>
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiUiBOb3RlYm9vayIKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQoKU2VlIGh0dHBzOi8vZ2l0aHViLmNvbS9uYXR2ZXJzZS9jb2NvbmF0Zmx5LwphbmQgaHR0cHM6Ly9uYXR2ZXJzZS5vcmcvY29jb25hdGZseQoKYGBge3J9CmxpYnJhcnkoY29jb25hdGZseSkKYGBgCgpgYGB7cn0KCmBgYAoKCmBgYHtyfQptYm9ubWV0YT1jZl9tZXRhKGNmX2lkcyhoZW1pYnJhaW49Jy90eXBlOk1CT04uKycsIGZseXdpcmUgPSAnL3R5cGU6TUJPTi4rJykpCm1ib25tZXRhCmBgYAoKYGBge3J9Cm1ib25tZXRhICU+JSAKICB3aXRoKHRhYmxlKHR5cGUsIGRhdGFzZXQpKQpgYGAKCmBgYHtyfQptYm9uMDJkcz1jZl9wYXJ0bmVycyhjZl9pZHMoaGVtaWJyYWluPScvdHlwZTpNQk9OMDInLCBmbHl3aXJlID0gJy90eXBlOk1CT04wMicpLCBwYXJ0bmVycyA9ICdvJywgdGhyZXNob2xkID0gNSkKbWJvbjAyZHMKYGBgCgpgYGB7cn0KbWJvbjAyZHNzPWNmX3BhcnRuZXJfc3VtbWFyeShjZl9pZHMoaGVtaWJyYWluPScvdHlwZTpNQk9OMDInLCBmbHl3aXJlID0gJy90eXBlOk1CT04wMicpLCBwYXJ0bmVycyA9ICdvJywgdGhyZXNob2xkID0gNSkKbWJvbjAyZHNzCmBgYAoKYGBge3J9Cm1ib24wMmRzcwpgYGAKCgoKYGBge3J9CmZhZmJzZWc6OnNpbXBsZV9weXRob24ocGtncyA9ICd2ZmItY29ubmVjdCcpCmBgYAoKCmBgYHtyfQp2Yz1yZXRpY3VsYXRlOjppbXBvcnQoJ3ZmYl9jb25uZWN0JykKYGBgCgpgYGB7cHl0aG9ufQpmcm9tIHZmYl9jb25uZWN0LmNyb3NzX3NlcnZlcl90b29scyBpbXBvcnQgVmZiQ29ubmVjdAp2YyA9IFZmYkNvbm5lY3QoKQoKdmMubG9va3VwX2lkKFsnNzIwNTc1OTQwNjMyNDU3NTE0J10pCnZjLm5lb19xdWVyeV93cmFwcGVyLnhyZWZfMl92ZmJfaWQoWyc3MjA1NzU5NDA2MzI0NTc1MTQnXSkKCiMgaGVtaWJyYWluIGlkIHdvcmtzCnZjLm5lb19xdWVyeV93cmFwcGVyLnhyZWZfMl92ZmJfaWQoWycxMTM5NjY3MjQwJ10sIHJldmVyc2VfcmV0dXJuPVRydWUpCnZjLm5lb19xdWVyeV93cmFwcGVyLnZmYl9pZF8yX3hyZWZzKChbJ1ZGQl9qcmNoazBlcyddKSkKCmBgYAoKYGBge3B5dGhvbn0KdmMubmVvX3F1ZXJ5X3dyYXBwZXIuZ2V0X1Rlcm1JbmZvKFsnU0lQMDg4J10pCmBgYAoK</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiUiBOb3RlYm9vayIKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQoKU2VlIGh0dHBzOi8vZ2l0aHViLmNvbS9uYXR2ZXJzZS9jb2NvbmF0Zmx5LwphbmQgaHR0cHM6Ly9uYXR2ZXJzZS5vcmcvY29jb25hdGZseQoKYGBge3J9CmxpYnJhcnkoY29jb25hdGZseSkKYGBgCgpgYGB7cn0KCmBgYAoKCmBgYHtyfQptYm9ubWV0YT1jZl9tZXRhKGNmX2lkcyhoZW1pYnJhaW49Jy90eXBlOk1CT04uKycsIGZseXdpcmUgPSAnL3R5cGU6TUJPTi4rJykpCm1ib25tZXRhCmBgYAoKYGBge3J9Cm1ib25tZXRhICU+JSAKICB3aXRoKHRhYmxlKHR5cGUsIGRhdGFzZXQpKQpgYGAKCmBgYHtyfQptYm9uMDJkcz1jZl9wYXJ0bmVycyhjZl9pZHMoaGVtaWJyYWluPScvdHlwZTpNQk9OMDInLCBmbHl3aXJlID0gJy90eXBlOk1CT04wMicpLCBwYXJ0bmVycyA9ICdvJywgdGhyZXNob2xkID0gNSkKbWJvbjAyZHMKYGBgCgpgYGB7cn0KbWJvbjAyZHNzPWNmX3BhcnRuZXJfc3VtbWFyeShjZl9pZHMoaGVtaWJyYWluPScvdHlwZTpNQk9OMDInLCBmbHl3aXJlID0gJy90eXBlOk1CT04wMicpLCBwYXJ0bmVycyA9ICdvJywgdGhyZXNob2xkID0gNSkKbWJvbjAyZHNzCmBgYAoKYGBge3J9Cm1ib24wMmRzcwpgYGAKCgoKYGBge3J9CmZhZmJzZWc6OnNpbXBsZV9weXRob24ocGtncyA9ICd2ZmItY29ubmVjdCcpCmBgYAoKCmBgYHtyfQp2Yz1yZXRpY3VsYXRlOjppbXBvcnQoJ3ZmYl9jb25uZWN0JykKYGBgCgpgYGB7cHl0aG9ufQpmcm9tIHZmYl9jb25uZWN0LmNyb3NzX3NlcnZlcl90b29scyBpbXBvcnQgVmZiQ29ubmVjdAp2YyA9IFZmYkNvbm5lY3QoKQoKdmMubG9va3VwX2lkKFsnNzIwNTc1OTQwNjMyNDU3NTE0J10pCnZjLm5lb19xdWVyeV93cmFwcGVyLnhyZWZfMl92ZmJfaWQoWyc3MjA1NzU5NDA2MzI0NTc1MTQnXSkKCiMgaGVtaWJyYWluIGlkIHdvcmtzCnZjLm5lb19xdWVyeV93cmFwcGVyLnhyZWZfMl92ZmJfaWQoWycxMTM5NjY3MjQwJ10sIHJldmVyc2VfcmV0dXJuPVRydWUpCnZjLm5lb19xdWVyeV93cmFwcGVyLnZmYl9pZF8yX3hyZWZzKChbJ1ZGQl9qcmNoazBlcyddKSkKCmBgYAoKYGBge3B5dGhvbn0KdmMubmVvX3F1ZXJ5X3dyYXBwZXIuZ2V0X1Rlcm1JbmZvKFsnU0lQMDg4J10pCnZjLm5lb19xdWVyeV93cmFwcGVyLmdldF9UZXJtSW5mbyhbJ1NJUDAwMSddKQpgYGAKIyMgCk1hcHBpbmcga2V5cyB0byB2ZmIgaWRzCgpgYGB7cHl0aG9ufQp2Yy5uZW9fcXVlcnlfd3JhcHBlci54cmVmXzJfdmZiX2lkKFsnMTAwMDEnXSwpCnZjLm5lb19xdWVyeV93cmFwcGVyLmdldF9kYnMoKQpgYGAKClNvIHdlIG1heWJlIG5lZWQgdG8ga25vdyB0aGUgZGJzPwoKYGBge3J9CgpgYGAKCg==</div>
 
 
 
