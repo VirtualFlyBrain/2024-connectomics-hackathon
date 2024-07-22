@@ -1,0 +1,69 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+See https://github.com/natverse/coconatfly/
+and https://natverse.org/coconatfly
+
+```{r}
+library(coconatfly)
+```
+
+```{r}
+
+```
+
+
+```{r}
+mbonmeta=cf_meta(cf_ids(hemibrain='/type:MBON.+', flywire = '/type:MBON.+'))
+mbonmeta
+```
+
+```{r}
+mbonmeta %>% 
+  with(table(type, dataset))
+```
+
+```{r}
+mbon02ds=cf_partners(cf_ids(hemibrain='/type:MBON02', flywire = '/type:MBON02'), partners = 'o', threshold = 5)
+mbon02ds
+```
+
+```{r}
+mbon02dss=cf_partner_summary(cf_ids(hemibrain='/type:MBON02', flywire = '/type:MBON02'), partners = 'o', threshold = 5)
+mbon02dss
+```
+
+```{r}
+mbon02dss
+```
+
+
+
+```{r}
+fafbseg::simple_python(pkgs = 'vfb-connect')
+```
+
+
+```{r}
+vc=reticulate::import('vfb_connect')
+```
+
+```{python}
+from vfb_connect.cross_server_tools import VfbConnect
+vc = VfbConnect()
+
+vc.lookup_id(['720575940632457514'])
+vc.neo_query_wrapper.xref_2_vfb_id(['720575940632457514'])
+
+# hemibrain id works
+vc.neo_query_wrapper.xref_2_vfb_id(['1139667240'], reverse_return=True)
+vc.neo_query_wrapper.vfb_id_2_xrefs((['VFB_jrchk0es']))
+
+```
+
+```{python}
+vc.neo_query_wrapper.get_TermInfo(['SIP088'])
+```
+
