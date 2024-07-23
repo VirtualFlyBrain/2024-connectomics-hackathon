@@ -15,6 +15,18 @@ Datasets are collections of data linking to single publications. Sometimes these
 
 <img width="436" alt="image" src="https://github.com/user-attachments/assets/21838814-b1f3-4b48-a655-1d7ddd272148">
 
+Xref lookup
+```
+vc.neo_query_wrapper.xref_2_vfb_id(['1700946301'])
+Out[29]: 
+{'1700946301': [{'db': 'neuronbridge', 'vfb_id': 'VFB_jrch05hm'},
+  {'db': 'neuronbridge', 'vfb_id': 'VFB_jrchjte4'},
+  {'db': 'neuprint_JRC_Hemibrain_1point0point1', 'vfb_id': 'VFB_jrch05hm'},
+  {'db': 'neuprint_JRC_Hemibrain_1point1', 'vfb_id': 'VFB_jrchjte4'
+```
+
+'1700946301': [{'db': 'neuprint_JRC_Hemibrain_1point1',
+   'vfb_id': 'VFB_jrchjte4'}]}
 
 ### Database and accession/xref queries on the API.
 
